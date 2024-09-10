@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing Page</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>Product Listing</h1>
+    </header>
+    <main>
+        <aside class="filters">
+            <h2>Filters</h2>
+            <div class="filter-group">
+                <h3>Category</h3>
+                <ul>
+                    <li><input type="checkbox" id="category1"><label for="category1">Electronics</label></li>
+                    <li><input type="checkbox" id="category2"><label for="category2">Clothing</label></li>
+                    <li><input type="checkbox" id="category3"><label for="category3">Home Appliances</label></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h3>Price Range</h3>
+                <input type="range" min="0" max="1000" step="10" id="priceRange">
+                <p>Price: $<span id="priceValue">500</span></p>
+            </div>
+        </aside>
+        <section class="product-list">
+            <div class="product-card">
+                <img src="EL.jpeg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$99.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="CL.jpeg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$149.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="HA.jpeg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$299.99</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Add more product cards as needed -->
+        </section>
+    </main>
+</body>
+</html>
